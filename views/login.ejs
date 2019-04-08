@@ -1,0 +1,32 @@
+<style>
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline;
+    }
+</style>
+
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/register">Register</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/secret">Secret</a></li>
+</ul>
+
+<h1>Login</h1>
+
+<form action="/login" method="POST">
+    <input type="text" placeholder="Enter username" aria-placeholder="Enter username" name="username">
+    <input type="password" placeholder="Enter password" aria-placeholder="Enter password" name="password">
+    <button>Submit</button>
+</form>
+
+    <section style="float: left;">
+        <a href="/register" style="margin-left: 4px;"><button>Sign Up</button></a>
+        <a href="/login" style="margin-right: 4px;"><button>Sign In</button></a>
+    </section>
+    <form action="/logout" method="POST" style="float: left;">
+        <button>Logout</button>
+    </form>
